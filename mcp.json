@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "linkia-closer": {
+      "type": "streamable-http",
+      "url": "https://mcp.linkiasoft.com/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "cimd"
+            },
+            "authorizationUrl": "https://api.linkiasoft.com/api/oauth/authorize",
+            "tokenUrl": "https://api.linkiasoft.com/api/oauth/token",
+            "baseScopes": [
+              "crm:read",
+              "conversations:read",
+              "analytics:read",
+              "ads:read",
+              "segments:read",
+              "broadcasts:read"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

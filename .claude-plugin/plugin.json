@@ -20,5 +20,10 @@
     "broadcasts",
     "ecommerce",
     "media-buying"
-  ]
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/linkiasoft/linkia-closer#readme",
+  "supportUrl": "https://linkiasoft.com",
+  "privacyPolicyUrl": "https://crm.linkiasoft.com/privacy-policy",
+  "termsOfServiceUrl": "https://crm.linkiasoft.com/terms"
 }

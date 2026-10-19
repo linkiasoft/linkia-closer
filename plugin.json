@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "linkia-closer",
+  "version": "1.0.0",
+  "description": "Turn chats into sales. Ask Linkia Closer about your Linkiasoft CRM: sales and pipeline, WhatsApp, Instagram and Messenger conversations, who on your team replies slowly, which click-to-WhatsApp ads bring real buyers, and COD orders. Build segments and send broadcasts after you confirm.",
+  "author": {
+    "name": "Linkiasoft",
+    "url": "https://linkiasoft.com"
+  },
+  "homepage": "https://github.com/linkiasoft/linkia-closer",
+  "repository": "https://github.com/linkiasoft/linkia-closer",
+  "license": "MIT",
+  "keywords": [
+    "sales",
+    "crm",
+    "whatsapp",
+    "closer",
+    "marketing",
+    "analytics",
+    "broadcasts",
+    "ecommerce",
+    "media-buying"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Linkia Closer",
+        "shortDescription": "Turn chats into sales",
+        "longDescription": "Linkia Closer connects ChatGPT to your Linkiasoft CRM. Ask about sales and pipeline, WhatsApp, Instagram, Messenger and Telegram conversations, who on your team replies slowly and which chats were left unanswered, which click-to-WhatsApp ads bring real buyers, and cash-on-delivery orders. With your workspace admin's permission it can tag leads, create tasks, reply to a customer, and build a segment and send a broadcast after you confirm the audience. It works with your own Linkiasoft permissions; phone numbers and emails are masked by default.",
+        "developerName": "Linkiasoft",
+        "category": "Business",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://linkiasoft.com",
+        "privacyPolicyURL": "https://crm.linkiasoft.com/privacy-policy",
+        "termsOfServiceURL": "https://crm.linkiasoft.com/terms",
+        "defaultPrompt": [
+          "How did my sales this week compare with last week?",
+          "Who on my team replies slowest, and which chats are waiting?",
+          "Which click-to-WhatsApp ads brought buyers last month?"
+        ],
+        "brandColor": "#111111",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
