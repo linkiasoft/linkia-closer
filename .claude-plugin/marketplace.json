@@ -1,0 +1,14 @@
+{
+  "name": "linkiasoft",
+  "owner": { "name": "Linkiasoft", "url": "https://linkiasoft.com" },
+  "metadata": {
+    "description": "Linkiasoft plugins for Claude"
+  },
+  "plugins": [
+    {
+      "name": "linkiasoft-crm",
+      "source": "./",
+      "description": "Ask about your Linkiasoft CRM: sales, WhatsApp/Instagram/Messenger conversations, team reply speed, click-to-WhatsApp ad results and COD orders; build segments and send broadcasts after you confirm."
+    }
+  ]
+}

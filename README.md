@@ -17,6 +17,15 @@ a customer, and build a segment and send a broadcast after you confirm the audie
   - `segment-and-broadcast` — build an audience, preview and confirm, then send or schedule.
   - `inbox-triage` — who is waiting, what customers ask about, and quick actions.
 
+## Install
+
+- **Claude (web and desktop):** Customize → Plugins → Add → Add marketplace → `linkiasoft/linkiasoft-claude-plugin`, then install **Linkiasoft CRM**.
+- **Claude Code:**
+
+```
+/plugin install linkiasoft-crm --marketplace linkiasoft/linkiasoft-claude-plugin
+```
+
 ## Use it
 
 1. Install the plugin, open its **Connectors** tab and connect **Linkiasoft CRM**.
