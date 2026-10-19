@@ -18,7 +18,7 @@ Broadcasts reach real customers and cannot be unsent. Follow these steps in orde
    - Drafting sends nothing.
 4. **Preview.** Call `preview_broadcast` (pass `send_at` when scheduling). Show the user, in one short block: recipient count, template or subject, sample recipients, units left this month, and every warning (night-time send, empty audience, not enough units).
 5. **Confirm.** Ask the user to confirm the exact recipient count. Do not continue on a vague "ok"; the count must match.
-6. **Send or schedule.** Call `send_broadcast` or `schedule_broadcast` with `confirm_recipient_count` and the `preview_token` from step 3. If the tool says the audience or draft changed, go back to step 4.
+6. **Send or schedule.** Call `send_broadcast` or `schedule_broadcast` with `confirm_recipient_count` and the `preview_token` from step 4. If the tool says the audience or draft changed, go back to step 4.
 7. Afterwards, `get_broadcast_performance` shows delivery and failures. To stop a send in progress, use `control_broadcast` with `pause` or `cancel`.
 
 Rules:
