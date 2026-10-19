@@ -12,14 +12,16 @@ a customer, and build a segment and send a broadcast after you confirm the audie
 
 ## What's inside
 
-- **Linkia Closer connector** (`https://mcp.linkiasoft.com/mcp`): about 50 tools that read and
+- **Linkia Closer connector** (`https://mcp.linkiasoft.com/mcp`): about 80 tools that read and
   act on your workspace with your own permissions.
 - **Skills** that teach Claude how to use them well:
   - `business-review` — weekly or monthly review with the numbers that matter and what to do next.
   - `team-reply-audit` — who replies slowly, what was left unanswered, and coaching notes.
   - `ad-performance-review` — which ads bring buyers, lead quality by source, Meta event health.
   - `segment-and-broadcast` — build an audience, preview and confirm, then send or schedule.
-  - `inbox-triage` — who is waiting, what customers ask about, and quick actions.
+  - `inbox-triage` — who is waiting, what customers ask about, what the AI handed off, and quick actions.
+  - `cod-orders` — unconfirmed cash-on-delivery orders, order lookup, address fixes and cancellations.
+  - `lead-ads-follow-up` — Facebook and Instagram lead-form leads, speed to lead, and missed-call call-backs.
 
 ## Install
 
