@@ -10,15 +10,17 @@ Broadcasts reach real customers and cannot be unsent. Follow these steps in orde
 1. **Audience.** Turn the user's description into a segment filter and call `preview_segment` (kind `customers` for buyers, `leads` for prospects). Show the count, how many have a phone or email, how many opted out, and two or three sample names.
    - Useful filters: `orderCountMin`, `lastOrderFrom`/`lastOrderTo` (win-back), `governorates`, `tags`, `stages`, `adIds`, `lastInboundFrom`.
    - If the user wants to reuse it, save it with `create_segment`.
-2. **Draft.** Call `draft_broadcast` with the channel and the segment.
-   - WhatsApp needs an approved template. If the tool lists approved templates, offer them; never invent a template name.
+2. **Number and template.** Call `list_channels` (type `whatsapp`) to pick the sending number, then `list_templates` with `status: APPROVED`.
+   - If no approved template fits, write one with the user and call `submit_template` (category `MARKETING` for promotions, `UTILITY` for transactional; variables as `{{1}}`, `{{2}}` with one example each; up to 3 quick-reply buttons). Meta reviews it, usually within minutes to a day; check again with `list_templates`. Nothing reaches customers until a broadcast is sent.
+3. **Draft.** Call `draft_broadcast` with the channel and the segment.
+   - WhatsApp needs an approved template. Never invent a template name.
    - Map template variables to `first_name`, `name`, `email`, `phone` or a fixed value.
    - Drafting sends nothing.
-3. **Preview.** Call `preview_broadcast` (pass `send_at` when scheduling). Show the user, in one short block: recipient count, template or subject, sample recipients, units left this month, and every warning (night-time send, empty audience, not enough units).
-4. **Confirm.** Ask the user to confirm the exact recipient count. Do not continue on a vague "ok"; the count must match.
-5. **Send or schedule.** Call `send_broadcast` or `schedule_broadcast` with `confirm_recipient_count` and the `preview_token` from step 3. If the tool says the audience or draft changed, go back to step 3.
-6. Afterwards, `get_broadcast_performance` shows delivery and failures. To stop a send in progress, use `control_broadcast` with `pause` or `cancel`.
+4. **Preview.** Call `preview_broadcast` (pass `send_at` when scheduling). Show the user, in one short block: recipient count, template or subject, sample recipients, units left this month, and every warning (night-time send, empty audience, not enough units).
+5. **Confirm.** Ask the user to confirm the exact recipient count. Do not continue on a vague "ok"; the count must match.
+6. **Send or schedule.** Call `send_broadcast` or `schedule_broadcast` with `confirm_recipient_count` and the `preview_token` from step 3. If the tool says the audience or draft changed, go back to step 4.
+7. Afterwards, `get_broadcast_performance` shows delivery and failures. To stop a send in progress, use `control_broadcast` with `pause` or `cancel`.
 
 Rules:
-- If sending is turned off for the workspace, these tools are not available; explain that a workspace admin can allow it in Settings → AI assistants.
+- Drafting, previewing and submitting templates work even when the workspace has sending turned off. Only `send_broadcast` and `schedule_broadcast` need a workspace admin to allow sending in Settings → AI assistants; if they are missing, prepare the draft and preview and tell the user to switch sending on and start a new chat.
 - People who opted out are excluded automatically. Never try to message them another way.

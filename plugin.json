@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "linkia-closer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Turn chats into sales. Ask Linkia Closer about your Linkiasoft CRM: sales and pipeline, WhatsApp, Instagram and Messenger conversations, who on your team replies slowly, which click-to-WhatsApp ads bring real buyers, and COD orders. Build segments and send broadcasts after you confirm.",
   "author": {
     "name": "Linkiasoft",
