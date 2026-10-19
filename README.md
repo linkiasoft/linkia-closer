@@ -1,3 +1,5 @@
+![Linkiasoft](assets/logo.png)
+
 # Linkiasoft CRM for Claude
 
 Ask about your [Linkiasoft CRM](https://linkiasoft.com) workspace in plain language and act on
