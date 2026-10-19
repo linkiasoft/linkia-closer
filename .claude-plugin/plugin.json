@@ -1,11 +1,24 @@
 {
-  "name": "linkiasoft-crm",
-  "displayName": "Linkiasoft CRM",
+  "name": "linkia-closer",
+  "displayName": "Linkia Closer",
   "version": "1.0.0",
-  "description": "Ask about your Linkiasoft CRM in plain language: sales and pipeline, WhatsApp, Instagram and Messenger conversations, how your team replies, which click-to-WhatsApp ads bring buyers, and COD store orders. Build segments and send broadcasts after you confirm.",
-  "author": { "name": "Linkiasoft", "url": "https://linkiasoft.com" },
+  "description": "Turn chats into sales. Ask Linkia Closer about your Linkiasoft CRM: sales and pipeline, WhatsApp, Instagram and Messenger conversations, who on your team replies slowly, which click-to-WhatsApp ads bring real buyers, and COD orders. Build segments and send broadcasts after you confirm.",
+  "author": {
+    "name": "Linkiasoft",
+    "url": "https://linkiasoft.com"
+  },
   "homepage": "https://linkiasoft.com/docs/ai-assistants",
-  "repository": "https://github.com/linkiasoft/linkiasoft-claude-plugin",
+  "repository": "https://github.com/linkiasoft/linkia-closer",
   "license": "MIT",
-  "keywords": ["crm", "whatsapp", "sales", "marketing", "analytics", "broadcasts", "ecommerce"]
+  "keywords": [
+    "sales",
+    "crm",
+    "whatsapp",
+    "closer",
+    "marketing",
+    "analytics",
+    "broadcasts",
+    "ecommerce",
+    "media-buying"
+  ]
 }

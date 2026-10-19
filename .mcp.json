@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "linkiasoft-crm": {
+    "linkia-closer": {
       "type": "http",
       "url": "https://mcp.linkiasoft.com/mcp"
     }
