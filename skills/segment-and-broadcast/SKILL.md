@@ -1,0 +1,24 @@
+---
+name: segment-and-broadcast
+description: Build an audience segment in Linkiasoft CRM and prepare or send a WhatsApp, SMS or email broadcast to it. Use when the user wants to message a group of customers, win back inactive buyers, promote an offer, or asks who would receive a campaign.
+---
+
+# Segment and broadcast
+
+Broadcasts reach real customers and cannot be unsent. Follow these steps in order and never skip the confirmation.
+
+1. **Audience.** Turn the user's description into a segment filter and call `preview_segment` (kind `customers` for buyers, `leads` for prospects). Show the count, how many have a phone or email, how many opted out, and two or three sample names.
+   - Useful filters: `orderCountMin`, `lastOrderFrom`/`lastOrderTo` (win-back), `governorates`, `tags`, `stages`, `adIds`, `lastInboundFrom`.
+   - If the user wants to reuse it, save it with `create_segment`.
+2. **Draft.** Call `draft_broadcast` with the channel and the segment.
+   - WhatsApp needs an approved template. If the tool lists approved templates, offer them; never invent a template name.
+   - Map template variables to `first_name`, `name`, `email`, `phone` or a fixed value.
+   - Drafting sends nothing.
+3. **Preview.** Call `preview_broadcast` (pass `send_at` when scheduling). Show the user, in one short block: recipient count, template or subject, sample recipients, units left this month, and every warning (night-time send, empty audience, not enough units).
+4. **Confirm.** Ask the user to confirm the exact recipient count. Do not continue on a vague "ok"; the count must match.
+5. **Send or schedule.** Call `send_broadcast` or `schedule_broadcast` with `confirm_recipient_count` and the `preview_token` from step 3. If the tool says the audience or draft changed, go back to step 3.
+6. Afterwards, `get_broadcast_performance` shows delivery and failures. To stop a send in progress, use `control_broadcast` with `pause` or `cancel`.
+
+Rules:
+- If sending is turned off for the workspace, these tools are not available; explain that a workspace admin can allow it in Settings → AI assistants.
+- People who opted out are excluded automatically. Never try to message them another way.

@@ -1,0 +1,11 @@
+{
+  "name": "linkiasoft-crm",
+  "displayName": "Linkiasoft CRM",
+  "version": "1.0.0",
+  "description": "Ask about your Linkiasoft CRM in plain language: sales and pipeline, WhatsApp, Instagram and Messenger conversations, how your team replies, which click-to-WhatsApp ads bring buyers, and COD store orders. Build segments and send broadcasts after you confirm.",
+  "author": { "name": "Linkiasoft", "url": "https://linkiasoft.com" },
+  "homepage": "https://linkiasoft.com/docs/ai-assistants",
+  "repository": "https://github.com/linkiasoft/linkiasoft-claude-plugin",
+  "license": "MIT",
+  "keywords": ["crm", "whatsapp", "sales", "marketing", "analytics", "broadcasts", "ecommerce"]
+}
