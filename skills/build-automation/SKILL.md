@@ -13,9 +13,9 @@ description: Build a Linkiasoft CRM automation (flow) from a plain-language desc
    - Branch with buttons (`interactive_message`), reply options (`wait_for_reply`) or a step's output handles, never with conditions on edges.
    - Official WhatsApp numbers can only send free text inside the 24-hour window. Proactive messages (order confirmations, reminders days later) need an approved template.
 4. Show the user the plan in plain words (trigger, each step, each branch, the exact messages) before creating it.
-5. Create it with `create_automation` (draft by default). If it comes back with problems, fix each one and try again; nothing was created.
-6. Going live: only when the user says so, publish with `create_automation` (`publish: true`, and `activate: true` to switch it on) or later with `publish_automation`. A live automation acts on real customers without anyone watching, so confirm first.
-7. After it has run, `get_automation_runs` shows completed and failed runs and the most common errors; `set_automation_status` pauses it.
+5. Create it with `create_automation`; it is always saved as a draft. If it comes back with problems, fix each one and try again; nothing was created.
+6. Going live: only when the user says so, `publish_automation` makes the draft the live version and `resume_automation` switches it on. A live automation acts on real customers without anyone watching, so confirm each step first.
+7. After it has run, `get_automation_runs` shows completed and failed runs and the most common errors; `pause_automation` stops it.
 
 Rules:
 - Never switch an automation on without the user's clear yes.
