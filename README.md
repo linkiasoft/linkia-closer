@@ -24,6 +24,7 @@ automations such as auto-replies, follow-ups and order confirmations.
   - `cod-orders` — unconfirmed cash-on-delivery orders, order lookup, address fixes and cancellations.
   - `lead-ads-follow-up` — Facebook and Instagram lead-form leads, speed to lead, and missed-call call-backs.
   - `build-automation` — turn a description or a ready-made template into an automation, as a draft until you publish it.
+  - `build-ai-agent` — brief, a Word questionnaire for the client, then a fully configured AI agent with the client's documents and catalogue as searchable knowledge; it stays off until you approve it.
 
 ## Install
 
