@@ -9,9 +9,9 @@
           "auth": {
             "type": "oauth",
             "client": {
-              "mode": "dcr",
-              "registrationUrl": "https://api.linkiasoft.com/api/oauth/register"
+              "mode": "dcr"
             },
+            "registrationUrl": "https://api.linkiasoft.com/api/oauth/register",
             "authorizationUrl": "https://api.linkiasoft.com/api/oauth/authorize",
             "tokenUrl": "https://api.linkiasoft.com/api/oauth/token",
             "baseScopes": [
