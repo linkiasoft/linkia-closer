@@ -8,11 +8,12 @@ Ask about your Linkiasoft CRM workspace in plain language and act on
 the answer: sales and pipeline, WhatsApp, Instagram, Messenger and Telegram conversations, how
 fast your team replies, which click-to-WhatsApp ads bring real buyers, and cash-on-delivery store
 orders. With your workspace admin's permission, Claude can also tag leads, create tasks, reply to
-a customer, and build a segment and send a broadcast after you confirm the audience.
+a customer, build a segment and send a broadcast after you confirm the audience, and create
+automations such as auto-replies, follow-ups and order confirmations.
 
 ## What's inside
 
-- **Linkia Closer connector** (`https://mcp.linkiasoft.com/mcp`): about 80 tools that read and
+- **Linkia Closer connector** (`https://mcp.linkiasoft.com/mcp`): more than 80 tools that read and
   act on your workspace with your own permissions.
 - **Skills** that teach Claude how to use them well:
   - `business-review` — weekly or monthly review with the numbers that matter and what to do next.
@@ -22,6 +23,7 @@ a customer, and build a segment and send a broadcast after you confirm the audie
   - `inbox-triage` — who is waiting, what customers ask about, what the AI handed off, and quick actions.
   - `cod-orders` — unconfirmed cash-on-delivery orders, order lookup, address fixes and cancellations.
   - `lead-ads-follow-up` — Facebook and Instagram lead-form leads, speed to lead, and missed-call call-backs.
+  - `build-automation` — turn a description or a ready-made template into an automation, as a draft until you publish it.
 
 ## Install
 
