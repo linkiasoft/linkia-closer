@@ -26,8 +26,8 @@ When the filled document comes back, read every answer. List what is missing or 
    - `followup`, `handoff`, `schedule`: as the client answered.
 2. Knowledge (RAG):
    - Policies, brochures, FAQs and website text go in with `add_ai_knowledge_document`, one per topic with a clear title. Enable `searchDocuments`.
-   - Catalogues, price lists and branch lists go in as CSV with `add_ai_knowledge_table`. Run `dry_run` first and map the column customers ask by as `what` and location columns as `where`. Enable `searchKnowledge`.
-3. Add answers to the hard questions (objections, price edge cases) with `update_ai_knowledge`.
+   - Catalogues, price lists and branch lists go in as CSV with `add_ai_knowledge_table`. Check it first with `preview_ai_knowledge_table`, then map the column customers ask by as `what` and location columns as `where`. Enable `searchKnowledge`.
+3. Add answers to the hard questions (objections, price edge cases) with `add_ai_training_example`.
 4. Check with `get_ai_agent`: every source is indexed, and every tool has its note.
 5. Show the user a short review: persona, prompt sections, tools, guardrails, follow-up, hand-off, knowledge, and anything still missing.
 6. Only on the user's clear yes: `activate_ai_agent`, then `assign_ai_agent_to_channel` for each chosen channel (ids from `list_channels`).

@@ -20,6 +20,6 @@ description: Run cash-on-delivery (COD) store orders in Linkiasoft CRM for Egypt
 5. Summarise: how many orders wait and since when, which need a call, what you changed, and where returns come from.
 
 Rules:
-- There is no tool to resend the WhatsApp confirmation for one order; the store's COD flow sends it. If the user wants to nudge a customer, draft a message and use `send_message` (inside the 24-hour window, or with an approved template) after the user confirms.
+- There is no tool to resend the WhatsApp confirmation for one order; the store's COD flow sends it. If the user wants to nudge a customer, draft a message and use `send_message` inside the 24-hour window, or `send_template_message` with an approved template, after the user confirms.
 - Phone numbers, emails and address lines come masked when the workspace masks personal data; never try to reconstruct them.
 - Orders created in chat or imported from before the store was connected are not in the unconfirmed list.
